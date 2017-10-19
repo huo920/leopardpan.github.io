@@ -29,23 +29,26 @@ tags: 教程
 	root@root:/# mysql -uroot -proot
 
 > -u 表示选择登陆的用户名，
-> -p 表示登陆的用户密码      
-![](/images/posts/UbuntuMySQL/01.png)
+> -p 表示登陆的用户密码 
+
+<img src="/images/posts/UbuntuMySQL/01.png"> 
 
 ## 二.配置远程登录
 
 ### 1.打开配置文件
-	root@root:/# sudo vim /etc/mysql/mysql.conf.d/mysqld.cnf    
+	root@root:/# sudo vim /etc/mysql/mysql.conf.d/mysqld.cnf
+	
 ### 2.修改配置文件
 	将bind-address = 127.0.0.1，修改为:0.0.0.0或者注释掉  
-![](/images/posts/UbuntuMySQL/02.png)  
+<img src="/images/posts/UbuntuMySQL/02.png"> 
+
 ### 3.添加远程访问权限
 	root@root:/# mysql -uroot -proot
 	->GRANT ALL PRIVILEGES ON *.* TO 'user'@'%' IDENTIFIED BY 'password' 
 		WITH GRANT OPTION;
 	->FLUSH PRIVILEGES;    
 >  上面的user,password可以设置成自己的
-![](/images/posts/UbuntuMySQL/04.png)
+<img src="/images/posts/UbuntuMySQL/04.png"> 
 
 ### 4.查看是否成功
 	 root@root:/# netstat -an | grep 3306
@@ -56,8 +59,9 @@ tags: 教程
 root@root:/# service mysql restart
 
 ### 6.测试连接
+
 #### 通过ifconfig找到IP地址
-![](/images/posts/UbuntuMySQL/03.png)
+<img src="/images/posts/UbuntuMySQL/03.png"> 
 
 #### 在Navicat上测试连接
-![](/images/posts/UbuntuMySQL/05.png)
+<img src="/images/posts/UbuntuMySQL/05.png"> 
