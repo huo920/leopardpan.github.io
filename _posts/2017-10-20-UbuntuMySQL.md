@@ -29,7 +29,7 @@ tags: 教程
 	root@root:/# mysql -uroot -proot
 
 > -u 表示选择登陆的用户名，
-> -p 表示登陆的用户密码 
+-p 表示登陆的用户密码 
 
 <img src="/images/posts/UbuntuMySQL/01.png"> 
 
@@ -49,7 +49,7 @@ tags: 教程
 		WITH GRANT OPTION;
 	->FLUSH PRIVILEGES;
 	
->  上面的user,password可以设置成自己的
+  上面的user,password可以设置成自己的
 
 <img src="/images/posts/UbuntuMySQL/04.png"> 
 
