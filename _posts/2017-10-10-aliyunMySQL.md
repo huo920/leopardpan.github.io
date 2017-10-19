@@ -7,6 +7,7 @@ tags: 教程
 
 #关于阿里云服务器如何打开端口的解决办法
 
+##此处以安装MySQL之后为例,打开3306端口
 
 ###1.登录阿里云控制台,找到自己的服务器实力
 <img src="/images/posts/aliyunMySQL/00.png"> 
