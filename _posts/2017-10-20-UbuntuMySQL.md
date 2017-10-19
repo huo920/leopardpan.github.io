@@ -39,24 +39,28 @@ tags: 教程
 	root@root:/# sudo vim /etc/mysql/mysql.conf.d/mysqld.cnf
 	
 ### 2.修改配置文件
-	将bind-address = 127.0.0.1，修改为:0.0.0.0或者注释掉  
+	将bind-address = 127.0.0.1，修改为:0.0.0.0或者注释掉 
+	
 <img src="/images/posts/UbuntuMySQL/02.png"> 
 
 ### 3.添加远程访问权限
 	root@root:/# mysql -uroot -proot
 	->GRANT ALL PRIVILEGES ON *.* TO 'user'@'%' IDENTIFIED BY 'password' 
 		WITH GRANT OPTION;
-	->FLUSH PRIVILEGES;    
+	->FLUSH PRIVILEGES;
+	
 >  上面的user,password可以设置成自己的
+
 <img src="/images/posts/UbuntuMySQL/04.png"> 
 
 ### 4.查看是否成功
 	 root@root:/# netstat -an | grep 3306
-	 tcp      0      0 0.0.0.0:3306         0.0.0.0:*           LISTEN        
+	 tcp      0      0 0.0.0.0:3306         0.0.0.0:*           LISTEN
+	 
 > 以上结果表示设置成功   
 
 ### 5.重启MySQL
-root@root:/# service mysql restart
+	root@root:/# service mysql restart
 
 ### 6.测试连接
 
