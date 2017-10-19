@@ -20,6 +20,7 @@ tags: 教程
 <img src="/images/posts/aliyunMySQL/04.jpg"> 
 
 ### 5.在弹出的页面中填写如下
-	端口范围:指定需要的端口
-	授权对象:此处设置所有的IP都可访问,可阅读规则,设置响应IP
+>端口范围:指定需要的端口  
+ 授权对象:此处设置所有的IP都可访问,可阅读规则,设置响应IP
+
 <img src="/images/posts/aliyunMySQL/05.png"> 
