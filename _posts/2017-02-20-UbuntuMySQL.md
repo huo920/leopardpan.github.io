@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Ubuntu上安装MySQL及配置远程登录
-date: 2017-10-20
+date: 2017-02-20
 tags: 教程    
 ---  
 ## 一.安装MySQL
